@@ -1,0 +1,29 @@
+@mixin background-responsive {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin smallMobile {
+    @media screen and (max-width: 470px) {
+        font-size: 300%;
+    }
+}
+@mixin thumbnail {
+    background: $color-darker;
+	box-shadow: 2px 2px 5px rgba(126, 126, 149, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.3), inset -2px -2px 5px rgba(224, 224, 232, 0.589476), inset 10px 10px 10px rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	padding: 15px;
+}
+@mixin textShadow {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
+    3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
+    0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04),
+    7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04),
+    9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04),
+    11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04),
+    13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04),
+    0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04),
+    17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04),
+    19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}

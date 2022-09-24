@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'gotham','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(248, 242, 242);
+}
+a, router-link {
+  text-decoration: none;
+}
+.navbar,.jumbotron,.jumbotron-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.btn:focus, .btn:active, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
