@@ -1,30 +1,15 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <NavBase />
+  <router-view />
+  <FooterBase />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// @ is an alias to /src
+import NavBase from "@/components/NavBase.vue";
+import FooterBase from "@/components/FooterBase.vue";
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+export default {
+  components: { NavBase, FooterBase },
+};
+</script>
